@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+</head>
+<body>
+    <div id="test">
+       <input type="text" v-on:keyup.enter.space.u="alertUser()">
+    </div>
+    
+</body>
+<script>
+new Vue({
+    el:"#test",
+    data:{
+        x:0,
+        y:0,
+    },
+    methods:{
+        alertUser:function(){
+            alert("Testing Keyboard Modifiers")
+        }
+    }
+})</script>
+</html>
